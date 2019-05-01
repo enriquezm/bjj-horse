@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One");
+
+body {
+  background-color: #29262d;
+  color: #ececec;
+}
+.App {
+  font-family: "Fugaz One", cursive;
+}
+.fadeIn {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

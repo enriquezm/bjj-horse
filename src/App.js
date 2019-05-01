@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Generator from "./components/Generator";
+import styled from "styled-components";
+import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Header = styled.div`
+  font-size: 36px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+const Footer = styled.div`
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: #7b2ce1;
+  }
+`;
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Header>
+          <h1>BJJ Horse</h1>
+        </Header>
+        <Generator />
+        <Footer>Created by <a href="https://github.com/enriquezm">Myles Enriquez</a></Footer>
+      </div>
+    );
+  }
 }
 
 export default App;
