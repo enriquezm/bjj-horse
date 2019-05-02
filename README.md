@@ -4,7 +4,7 @@ Play horse while keeping up with your BJJ game.
 
 First to spell out "Choke" loses.
 
-[Live App Here](https://panoramic-sun.surge.sh/)
+[Live App Here](https://measly-yak.surge.sh)
 
 ![](./screenshot.png)
 
